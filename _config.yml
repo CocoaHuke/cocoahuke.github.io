@@ -9,7 +9,7 @@ name: Cocoa
 description: iOS/Mac kernel
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar:![_config.yml]({{ site.baseurl }}/images/apple-logo.png)
+avatar: https://raw.githubusercontent.com/cocoahuke/cocoahuke.github.io/master/images/apple-logo.png
 
 #
 # Flags below are optional
