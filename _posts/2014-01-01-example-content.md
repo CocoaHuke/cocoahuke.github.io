@@ -1,6 +1,6 @@
 ---
-layout: post
-title: Example content
+layout: page2
+title: 测试第二页
 ---
 
 
