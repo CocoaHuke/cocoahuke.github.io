@@ -1,11 +1,16 @@
+原本about.md的格式:
 ---
 layout: page
 title: About
 permalink: /about/
 ---
 
-And I like play Call of Duty via Xboxlive,Xboxlive:CocoaTouch
-![_config.yml]({{ site.baseurl }}/images/kirino.jpg)
+haven’t yet~
+
+### More Information //有###就是小标题
+
+haven’t yet~
+
 ### Contact me
 
 [cocoatouch@outlook.com](mailto:cocoatouch@outlook.com)
