@@ -18,8 +18,11 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
   color: $darkGray;
 }
 
@@ -30,13 +33,14 @@ body {
   width: 100%;
 }
 
+/*主页面所有标题*/
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #6f8f9f;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1em 0 0px; /*主页面小标题和文章之间距离*/
   padding: 0;
 
   @include mobile {
@@ -44,8 +48,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/*主页面所有标题*/
 h1 {
-  font-size: 30px;
+  font-size: 28px;
   a {
     color: inherit;
   }
@@ -68,8 +73,24 @@ p {
   margin: 15px 0;
 }
 
+/*主页面小文章readmore*/
+readmore {
+  font-size: medium;
+  color: black;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+div{
+  font-size: medium;
+  color: grey;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+/*主页面所有标题*/
 a {
-  color: $blue;
+  color: black;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
@@ -180,9 +201,11 @@ img {
   }
 }
 
+/*左上角的信息(ios/mac那个)*/
 .site-info {
-  float: left;
-
+   color: black;
+   float: left;
+   font-weight: 200;
   @include mobile {
     float: none;
     display: block;
@@ -190,16 +213,18 @@ img {
   }
 }
 
+/*左上角的信息(Cocoa那个)*/
 .site-name {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 28px;
   letter-spacing: 1px;
 }
 
+/*第一篇blog的标题*/
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
@@ -210,11 +235,13 @@ img {
   }
 }
 
+/*导航栏按钮选项*/
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
+  margin-top: 30px; // @TODO: Vertically middle align
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 30px;
 
   @include mobile {
     float: none;
@@ -275,7 +302,6 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
 }
 
 footer {
