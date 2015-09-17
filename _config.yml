@@ -9,7 +9,7 @@ title:               Cocoa
 tagline:             ‘for iOS/Mac’
 description:         if have some question,just tell me.Twitter:<a href=https://twitter.com/cocoahuke>@CocoaHuke</a>.
 url:                 http://lanyon.getpoole.com
-baseurl:             ‘‘
+baseurl:             
 paginate:            5
 
 # About/contact
