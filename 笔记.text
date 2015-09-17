@@ -1,0 +1,27 @@
+原本about.md的格式:
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+haven’t yet~
+
+### More Information //有###就是小标题
+
+haven’t yet~
+
+### Contact me
+*********************************************************
+[cocoatouch@outlook.com](mailto:cocoatouch@outlook.com)
+
+jekyll显示代码块转义符
+
+{% highlight bash %}
+//你的代码,在代码块里现实的代码不会特殊符号无法显示的问题.还会根据语法高亮
+{% endhighlight %}
+
+//一定要贴紧.不然会报错(缺少end的错误)
+*********************************************************
+根目录下的index.html是主页面下半部分(小文章)的代码.可以调整小文章……
+_layouts下的default.html是主页面上半部分的代码.编辑导航栏排版,增加东西等…
