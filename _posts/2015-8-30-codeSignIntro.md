@@ -7,18 +7,22 @@ title: 启动时的代码签名(code-sign)
 ////kern_exec.c文件
 int execve(proc_t p, struct execve_args *uap, int32_t *retval)
 //执行文件时,会调用execve函数.
+ 
 err = __mac_execve(p, &muap, retval);
 //里面主要会调用__mac_execve函数.
+ 
 int __mac_execve(proc_t p, struct __mac_execve_args *uap, int32_t *retval)
 //这里我有点迷惑,按常理来说,在__mac_execve函数里应该会调用exec_mach_imgact函数.
 可是我并没有发现调用的代码,也可能是我不小心删了代码,不过不用在意.这个函数还是比较表层的,总之会调用exec_mach_imgact函数.
-static int
-exec_mach_imgact(struct image_params *imgp)
+ 
+static int exec_mach_imgact(struct image_params *imgp)
+ 
 //在exec_mach_imgact函数里实现主要功能调用的函数就是load_machfile
 lret = load_machfile(imgp, mach_header, thread, map, &load_result);
+ 
+ 
 //mach_loader.c文件
-load_return_t
-load_machfile(
+load_return_t load_machfile(
               struct image_params	*imgp,
               struct mach_header	*header,
               thread_t 		thread,
@@ -33,7 +37,7 @@ lret = parse_machfile(vp, map, thread, header, file_offset, macho_size,
 //parse_machfile函数里的变量ncmds.记录执行文件头里面的指令数量.
 //parse_machfile函数里会用ncmds循环(ncmds为uint32_t)
 //循环里调用switch(lcp->cmd).cmd是lcp结构体里的.存着真正表示指令的内容
-.
+ 
 //在switch里的case LC_CODE_SIGNATURE:里会调用load_code_signature函数,传入有关参数
 case LC_CODE_SIGNATURE:
 /* CODE SIGNING */
@@ -59,9 +63,11 @@ if (ret != LOAD_SUCCESS) {
     got_code_signatures = TRUE;
 }
 break;
+ 
 //load_code_signature里实际检查的操作是调用ubc_cs_blob_add,并把有关参数传入(详细部分自己看c文件)
 ubc_cs_blob_add(vp,cputype,macho_offset,addr,lcp->datasize)
 //传入的参数,部分参数可能已经在函数内改动过,不要直接对照着上面的参数
+ 
 //ubc_subr.c文件
 #if CONFIG_MACF
 error = mac_vnode_check_signature(vp, base_offset, blob->csb_sha1, (const void*)cd, size, &is_platform_binary);
@@ -71,10 +77,12 @@ if (error) {
         goto out;
 }
 //ubc_cs_blob_add函数内实际检查部分在调用mac_vnode_check_signature函数,会传入有关参数
+ 
 //mac_vfs.c文件
 //在mac_vnode_check_signature函数内调用MAC_CHECK宏,并传入有关参数
 MAC_CHECK(vnode_check_signature, vp, vp->v_label, macho_offset, sha1,
 signature, size, is_platform_binary);
+ 
 //mac_internal.h文件
 //这里定义了MAC_CHECK宏
 #define	MAC_CHECK(check, args...) do {					\
@@ -149,6 +157,7 @@ if (mpc->mpc_ops->mpo_ ## check != NULL) {	\
 MAC_CHECK(vnode_check_signature,vp,vp->v_label, macho_offset, sha1,
           signature, size, is_platform_binary);
 //mpc->mpc_ops->mpo_ ## check (args),args是因为MAC_CHECK宏是多参数的.
+ 
 实际执行时,会把mac_vnode_check_signature里调用MAC_CHECK宏的参数传入.
 除去第一个参数,因为MAC_CHECK宏里是MAC_CHECK(check,args...)
 //所以实际在MAC_CHECK宏里的调用是这样的:(返回一个int)
