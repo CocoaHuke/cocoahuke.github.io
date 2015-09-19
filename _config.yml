@@ -11,7 +11,7 @@ description:         if have some question,just tell me.Twitter:<a href=https://
 url:                 http://lanyon.getpoole.com
 baseurl:             
 paginate:            5
-
+data:                Document
 # About/contact
 author:
   name:              CocoaHuke
