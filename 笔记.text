@@ -25,3 +25,8 @@ jekyll显示代码块转义符
 *********************************************************
 根目录下的index.html是主页面下半部分(小文章)的代码.可以调整小文章……
 _layouts下的default.html是主页面上半部分的代码.编辑导航栏排版,增加东西等…
+
+添加图片
+![_config.yml]({{ site.baseurl }}/images/kirino.jpg)
+添加链接
+[_config.yml]({{ site.baseurl }}/images/somefileOrHtml)
