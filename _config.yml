@@ -12,9 +12,12 @@ url:                 http://lanyon.getpoole.com
 baseurl:             
 paginate:            5
 data:                Document
+<<<<<<< HEAD
 gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "page:num"
+=======
+>>>>>>> 84cfb3df6d2fea5e34db69c2b7a146c2006a51a7
 # About/contact
 author:
   name:              CocoaHuke
