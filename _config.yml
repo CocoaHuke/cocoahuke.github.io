@@ -1,0 +1,22 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Cocoa
+tagline:             ‘for iOS/Mac’
+description:         if have some question,just tell me.Twitter:<a href=https://twitter.com/cocoahuke>@CocoaHuke</a>.
+url:                 http://lanyon.getpoole.com
+baseurl:             
+paginate:            5
+data:                Document
+# About/contact
+author:
+  name:              CocoaHuke
+  url:               https://twitter.com/cocoahuke
+  email:             cocoatouch@outlook.com
+
+# Custom vars
+version:             1.0.0
