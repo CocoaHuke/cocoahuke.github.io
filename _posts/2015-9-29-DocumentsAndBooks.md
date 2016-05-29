@@ -2,9 +2,13 @@
 layout: post
 title: Documents And Books
 ---
+
+This Post Has been updated in 2016.5.30  
+已经更新了,更新的内容放在旧内容下面
+
 哈哈~,下面是我收集的很多相关书籍和各种幻灯片.分享给大家.因为最好的办法还是”自己学习!!”.等我再有整理好的和新的我会更新,部分名字稍微可能有些错误,不用太在意,不要白拿,评论下~,给其他人一些意见
 
-还有:支持正版! 部分书实体书都是有中文翻译的.  
+还有:应该支持正版! 部分书实体书都是有中文翻译的.  
 ![rabbit]({{ site.baseurl }}/images/rabbit.jpg)好吧,我也提供下载链接.
 
 #—Books:
@@ -127,3 +131,60 @@ by Stefan Esser
 
 ##iOS Kernel Exploitation(iOKit Edition)
 by Stefan Esser
+
+#— - Update in 2016.5.30 — - 
+[Download](http://pan.baidu.com/s/1jHJzdoa)
+
+##Security vulnerabilities on OS X  
+by 그레이해쉬  
+
+##THE ALPHA AND THE OMEGA — LAUNCHD  
+by newosxbook  
+作者的网站很厉害,这篇讲解了launchd维护的一些机制,比如bootstrap,这里可以找到容易理解的解释
+
+##Auditing and Exploiting Apple IPC  
+by ianbeer  
+学习XPC的Fuzz和理解launchd维护的机制(bootstrap)很好的材料
+
+##Advanced Mac OS X Rootkits  
+by Dino Dai Zovi…  
+
+##Attacking the XNU Kernel in El Capitan
+by Luca Todesco  
+对2015部分公开的漏洞的利用和尝试
+
+##iOS Kernel Heap Armageddon
+by Stefan Esser
+入门XNU堆利用的资料
+
+##Optimized Fuzzing IOKit in iOS
+by Lei Long..
+参考静态分析内核的资料(PPT)
+
+##Optimized Fuzzing IOkit in iOS
+by Lei Long
+参考静态分析内核的资料(文稿)
+
+##Visualizing Page Tables for Exploitation
+by Alexandru Radocea and Georg Wicherski
+解释了内核的几种漏洞类型和机制
+
+##Heap Feng Shui in JavaScript
+by Alexander Sotirov
+首次提出堆分水的ppt,增强堆漏洞利用的理解
+
+##Advanced MAC OS X ROOTKITS
+by DINO A. DAI ZOVI
+
+##Capstone: Next-Gen Disassembly Framework
+by Nguyen Anh Quynh,Coseinc
+非常好用的静态分析函数
+
+##OS X Kernel is As Strong as its Weakest Part
+by KeenTeam
+
+##Hacking from iOS8 to iOS9
+by Pangu
+
+##IOKit Fundamentals
+by Apple
