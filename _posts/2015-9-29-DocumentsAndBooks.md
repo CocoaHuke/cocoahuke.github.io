@@ -154,37 +154,37 @@ by Luca Todesco
 对2015部分公开的漏洞的利用和尝试
 
 ##iOS Kernel Heap Armageddon
-by Stefan Esser
+by Stefan Esser  
 入门XNU堆利用的资料
 
 ##Optimized Fuzzing IOKit in iOS
-by Lei Long..
+by Lei Long..  
 参考静态分析内核的资料(PPT)
 
 ##Optimized Fuzzing IOkit in iOS
-by Lei Long
+by Lei Long  
 参考静态分析内核的资料(文稿)
 
 ##Visualizing Page Tables for Exploitation
-by Alexandru Radocea and Georg Wicherski
+by Alexandru Radocea and Georg Wicherski    
 解释了内核的几种漏洞类型和机制
 
 ##Heap Feng Shui in JavaScript
-by Alexander Sotirov
+by Alexander Sotirov    
 首次提出堆分水的ppt,增强堆漏洞利用的理解
 
 ##Advanced MAC OS X ROOTKITS
-by DINO A. DAI ZOVI
+by DINO A. DAI ZOVI  
 
 ##Capstone: Next-Gen Disassembly Framework
-by Nguyen Anh Quynh,Coseinc
+by Nguyen Anh Quynh,Coseinc  
 非常好用的静态分析函数
 
 ##OS X Kernel is As Strong as its Weakest Part
-by KeenTeam
+by KeenTeam  
 
 ##Hacking from iOS8 to iOS9
-by Pangu
+by Pangu  
 
 ##IOKit Fundamentals
-by Apple
+by Apple  
