@@ -133,7 +133,7 @@ by Stefan Esser
 by Stefan Esser
 
 #— - Update in 2016.5.30 — - 
-[Download](http://pan.baidu.com/s/1jHJzdoa)
+[Download](http://pan.baidu.com/s/1gf0O779)
 
 ##Security vulnerabilities on OS X  
 by 그레이해쉬  
@@ -188,3 +188,36 @@ by Pangu
 
 ##IOKit Fundamentals
 by Apple  
+
+##BlackHat 2012议题浏览
+
+##iOS Keychain Weakness FAQ
+by Jens Heider, Rachid El Khayari
+
+##Advanced iOS Exploitation Class Day2
+by Crakun
+
+##Advanced iOS Exploitation Class Day3
+by Crakun
+
+##Advanced iOS Exploitation Class Day4
+by Crakun
+
+##Advanced iOS Exploitation Class Day5
+by Crakun
+
+##Advanced iOS Exploitation Class Day8
+by Crakun
+
+##Advanced iOS Exploitation Class Day10
+by Crakun
+
+##Advanced iOS Exploitation Class Day12
+by Crakun
+
+##Advanced iOS Exploitation Class Day14
+by Crakun
+
+##Advanced iOS Exploitation cLASS Day15
+by Crakun
+
